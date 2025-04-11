@@ -1,4 +1,21 @@
-/* Styles for the CV sections */
+* {
+  box-sizing: border-box;
+  font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+
+html,
+body {
+  margin: 0;
+  padding: 0;
+}
+
+main {
+  padding-left: 1em;
+  padding-right: 1em;
+}
+
+
 #cv-content {
   font-family: Arial, sans-serif;
   line-height: 1.6;
@@ -18,9 +35,11 @@
 /* Styles for the header and footer */
 header {
   background-color: #f4f4f4;
-  padding: 20px;
+  padding-top: 2em;
   text-align: center;
   border-bottom: 2px solid #333;
+  position: sticky;
+  top: 0;
 }
 
 header h1 {
@@ -81,7 +100,8 @@ section h2 {
   padding-bottom: 5px;
 }
 
-section p, section ul {
+section p,
+section ul {
   margin: 10px 0;
 }
 
