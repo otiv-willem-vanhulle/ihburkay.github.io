@@ -3,10 +3,248 @@
 <head>
   <meta charset="UTF-8">
   <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>My GitHub Website</title>
+  <title>Ibrahim Burkay - CV</title>
+  <link rel="stylesheet" href="styles.css">
+  <script src="script.js" defer></script>
+  <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.8.2/angular.min.js"></script>
 </head>
-<body>
-  <h1>Hello, welcome to my GitHub Pages site!</h1>
-  <p>This is my first website on GitHub Pages.</p>
+<body ng-app="cvApp">
+  <header>
+    <h1>Ibrahim Burkay</h1>
+    <p>Email: <a href="mailto:ihburkay@gmail.com">ihburkay@gmail.com</a></p>
+    <p>Website: <a href="https://ihburkay.github.io/">https://ihburkay.github.io/</a></p>
+    <p>Mobile: +32 494 724 606</p>
+  </header>
+
+  <nav>
+    <ul>
+      <li><a href="#home">Home</a></li>
+      <li><a href="#experience">Experience</a></li>
+      <li><a href="#projects">Projects</a></li>
+      <li><a href="#skills">Skills</a></li>
+      <li><a href="#education">Education</a></li>
+      <li><a href="#hobbies">Hobbies</a></li>
+      <li><a href="#contact">Contact</a></li>
+    </ul>
+  </nav>
+
+  <section id="home">
+    <h2>Home</h2>
+    <p>Welcome to Ibrahim Burkay's CV website.</p>
+  </section>
+
+  <section id="experience">
+    <h2>Experience</h2>
+    <p><strong>VDAB and CVO (Adult and refugee high-school)</strong> - Gent, Belgium</p>
+    <p>Dutch and Java developer curses (Jan. 2023 - still)</p>
+    <ul>
+      <li><strong>Java Developer</strong>: I reviewed the latest Java technologies, which are taught in Dutch, using the Spring Boot framework. Additionally, I developed example projects to practice and gain hands-on experience with these.</li>
+      <li><strong>Dutch learning - B1</strong>: I am continuing my Dutch language education with the support of Groeinpunt, Kisp, and VDAB to better adapt to daily life.</li>
+    </ul>
+    <p><strong>Zimed Medical (It is a healthcare company that combines biomedical eng.)</strong> - Gaziantep, Türkiye</p>
+    <p>ERP specialist and Software engineer (Microsoft Dynamics Navision, .NET Blazor, MSSQL) (Feb. 2022 - Sep. 2022)</p>
+    <ul>
+      <li><strong>ERP System Management</strong>: I worked on Microsoft Dynamics Navision ERP system by fixing existing errors, designing new screens, and developing with its special coding language. I also prepared SQL scripts to extract statistical data and provided training to users to ensure efficient system usage.</li>
+      <li><strong>HelpDesk Application</strong>: I developed a Help Desk application using the .NET Blazor framework to handle ERP and IT technical support requests from users in various factory departments. This application enabled tracking of tasks and provided feedback to request owners.</li>
+    </ul>
+    <p><strong>GSO (Gaziantep Chamber of Industry)</strong> - Gaziantep, Türkiye</p>
+    <p>Software Specialist (.Net C#, MSSQL) (July 2019 - January 2022)</p>
+    <ul>
+      <li><strong>Trainee Tracking Program</strong>: I developed the desktop application using .NET C#, DevExpress, and MSSQL for the Gaziantep Chamber of Industry. The program was designed to register participants at the vocational training center and track all processes throughout their training as part of the initiative to integrate refugees into employment. Users were trained on how to use the application, and any issues encountered during use were fixed while new features were added based on requests.</li>
+      <li><strong>Dashboard Application</strong>: I developed a dashboard application using ASP .NET, Razor Pages, and MSSQL to help company managers monitor the routine activities of subcontractors.</li>
+    </ul>
+    <p><strong>Xloop Interactive (Metropolis presentation tool with map)</strong> - Gaziantep, Türkiye</p>
+    <p>Backend Developer-Remotely (ASP.Net C#, MSSQL) (Sep. 2019 - still)</p>
+    <ul>
+      <li><strong>Back-end</strong>: Metropolis is a great presentation tool that uses Google Maps to help public service institutions showcase their projects based on location. I made significant contributions to developing the REST API using the .NET framework for the project, which features a fast and dynamic backend. I continue to provide remote support to the company.</li>
+    </ul>
+    <p><strong>Erpen PVC (Operating in the polymer door and window sector)</strong> - Gaziantep, Türkiye</p>
+    <p>Software engineer (.Net C#, MSSQL) (November 2018 - June 2019)</p>
+    <ul>
+      <li><strong>ERP development</strong>: I worked with a software team to develop an ERP system for tracking business processes in the factory’s procurement, production, warehouse, and shipment departments. During this process, I was responsible for fixing user-reported issues, developing new business models, and building and managing the ERP system using C# .NET, MSSQL, and stored procedures.</li>
+    </ul>
+    <p><strong>Barfas AutoID (RFID)</strong> - Istanbul, Türkiye</p>
+    <p>Software engineer (.Net C#, MSSQL) (March 2018 - October 2018)</p>
+    <ul>
+      <li><strong>RFID tagId reading project</strong>: A Java-based stream project was developed to read RFID tags on products collectively during shipment in the manufacturing sector using the TCP/IP protocol and store the data in a database.</li>
+      <li><strong>Forecast website</strong>: A dynamic website was developed using PHP, HTML, CSS, JavaScript, jQuery, and MySQL, where visitors could make predictions about the future value of foreign currencies against the Turkish Lira. The website featured various graphs to assist with these predictions.</li>
+    </ul>
+    <p><strong>Ministry of Justice (UYAP, National Judiciary Informatics System)</strong> - Ankara, Türkiye</p>
+    <p>Software Developing Specialist (Java EE, JPA, Oracle SQL, PL/SQL) (Nov. 2010 - Feb 2018)</p>
+    <ul>
+      <li><strong>UYAP</strong>: I worked as a Java Developer in a large software team on Turkey's National Judiciary Network Project, a massive multi-user project where data from various units of the Ministry of Justice, such as courts and prosecutors' offices, was entered. The project involved generating statistical reports and contributed to speeding up the judicial process.</li>
+    </ul>
+  </section>
+
+  <section id="projects">
+    <h2>Major professional projects</h2>
+    <p><strong>Metropolis Presentation tool</strong> - Xloop</p>
+    <p>Map based presentation tool (.Net C# REST API, MSSQL) (Sep. 2019 - still)</p>
+    <ul>
+      <li><strong>Back-end</strong>: Each slide was linked to a selected location on the map, and this information was stored in the database. Additionally, it was ensured that the required data could be sent interactively to the frontend in JSON format for dynamic retrieval.</li>
+    </ul>
+    <p><strong>Trainee Tracking Program</strong> - GSO</p>
+    <p>WinForm project (.NET C#, Devexpress, MSSQL) (July. 2019 - Jan. 2022)</p>
+    <ul>
+      <li><strong>Training process</strong>: The system handled user registrations, assignment to training sessions, payment processing, and the facilitation of employment opportunities within the industry.</li>
+    </ul>
+    <p><strong>UYAP</strong> - Ministry of Justice</p>
+    <p>National Judiciary Informatics System (Java Enterprise Edition) (Nov. 2010 - Feb. 2018)</p>
+    <ul>
+      <li><strong>Back-end</strong>: In the backend of the project, Java technologies such as JSEE, EJBs, and JPA were used, along with Oracle database and PL/SQL. Additionally, data sharing between the project and other government projects was facilitated through SOA web services. During the deployment phase, Jenkins tool was used for continuous integration and deployment.</li>
+      <li><strong>Graphic User Interface (GUI)</strong>: The user interfaces were developed using Swing components. In the system, which had multiple modules, I worked as a module developer, designing user screens with Java Swing.</li>
+    </ul>
+  </section>
+
+  <section id="skills">
+    <h2>Spoken languages</h2>
+    <ul>
+      <li><strong>English</strong>: Upper Intermediate</li>
+      <li><strong>Dutch</strong>: Intermediate</li>
+      <li><strong>Turkish</strong>: Native</li>
+    </ul>
+    <h2>Programming languages (used professionally)</h2>
+    <ul>
+      <li><strong>.NET C#</strong>: Advanced (4 years). Specialized in trait bounds and life-times. ASP .NET Frameworks used: IIS (web server), REST API, GRAPHQL API (.NET Core, Entity Framework), Blazor (MAUI), Devexpress, Docker.</li>
+      <li><strong>Java Technologies</strong>: Advanced (6 years). UYAP (Ministry of Justice in Turkey). Frameworks used: Spring Boot, Spring Web, Spring Data, Spring Security, J2EE, JSE, EJB, OpenJPA, Hibernate (Backend side), Swing (GUI), JSP (Portal), SOA (Web servers), specialized word processor (Digital signature on documentations), Jenkins (Deploying).</li>
+      <li><strong>Databases</strong>: Advanced (10 years) Oracle SQL and Oracle BI (Database for UYAP), MSSQL (GSO projects), MySQL, PostgreSQL (Website for Website projects).</li>
+      <li><strong>Web Technologies</strong>: Advanced (2 years) HTML, CSS, JavaScript, PHP, WordPress.</li>
+    </ul>
+  </section>
+
+  <section id="education">
+    <h2>Education</h2>
+    <p><strong>MU Mersin</strong> - Mersin, Türkiye</p>
+    <p>Bachelor of Computer Engineering (Sept. 2006 - August 2010)</p>
+    <ul>
+      <li><strong>Completed courses</strong>: Data Structures and Algorithms, OOP with Java, Parallel programming, Databases, Network, Web Programming, Electronic, Processors.</li>
+      <li><strong>Professional job</strong>: IT support for courts of the city.</li>
+    </ul>
+    <p><strong>GAUN Gaziantep</strong> - Gaziantep, Türkiye</p>
+    <p>Vocational High School - Computer programming (Sep. 2001 - June 2005)</p>
+    <ul>
+      <li><strong>Completed courses</strong>: Pascal, OOP with Delphi, Processors, Industrial Electronic, Web Programming with PHP, Databases, Network systems.</li>
+      <li><strong>Professional job</strong>: Management of Hospital automation.</li>
+    </ul>
+  </section>
+
+  <section id="hobbies">
+    <h2>Hobbies</h2>
+    <ul>
+      <li><strong>Community Deinze</strong>: Join the community 'Deinze gemeente samengesprek', a community for new comers in Deinz. Goal is to practice in Dutch and to be social with organized activations.</li>
+      <li><strong>Individual hobbies</strong>: Biking, fitness, football, reading book, traveling.</li>
+    </ul>
+  </section>
+
+  <section id="contact">
+    <h2>Contact</h2>
+    <p>Email: <a href="mailto:ihburkay@gmail.com">ihburkay@gmail.com</a></p>
+    <p>Website: <a href="https://ihburkay.github.io/">https://ihburkay.github.io/</a></p>
+    <p>Mobile: +32 494 724 606</p>
+  </section>
+
+  <footer>
+    <p>&copy; 2023 Ibrahim Burkay. All rights reserved.</p>
+  </footer>
+
+  <script>
+    angular.module('cvApp', [])
+      .controller('CvController', function($scope) {
+        $scope.cvContent = `
+          <h2>Experience</h2>
+          <p><strong>VDAB and CVO (Adult and refugee high-school)</strong> - Gent, Belgium</p>
+          <p>Dutch and Java developer curses (Jan. 2023 - still)</p>
+          <ul>
+            <li><strong>Java Developer</strong>: I reviewed the latest Java technologies, which are taught in Dutch, using the Spring Boot framework. Additionally, I developed example projects to practice and gain hands-on experience with these.</li>
+            <li><strong>Dutch learning - B1</strong>: I am continuing my Dutch language education with the support of Groeinpunt, Kisp, and VDAB to better adapt to daily life.</li>
+          </ul>
+          <p><strong>Zimed Medical (It is a healthcare company that combines biomedical eng.)</strong> - Gaziantep, Türkiye</p>
+          <p>ERP specialist and Software engineer (Microsoft Dynamics Navision, .NET Blazor, MSSQL) (Feb. 2022 - Sep. 2022)</p>
+          <ul>
+            <li><strong>ERP System Management</strong>: I worked on Microsoft Dynamics Navision ERP system by fixing existing errors, designing new screens, and developing with its special coding language. I also prepared SQL scripts to extract statistical data and provided training to users to ensure efficient system usage.</li>
+            <li><strong>HelpDesk Application</strong>: I developed a Help Desk application using the .NET Blazor framework to handle ERP and IT technical support requests from users in various factory departments. This application enabled tracking of tasks and provided feedback to request owners.</li>
+          </ul>
+          <p><strong>GSO (Gaziantep Chamber of Industry)</strong> - Gaziantep, Türkiye</p>
+          <p>Software Specialist (.Net C#, MSSQL) (July 2019 - January 2022)</p>
+          <ul>
+            <li><strong>Trainee Tracking Program</strong>: I developed the desktop application using .NET C#, DevExpress, and MSSQL for the Gaziantep Chamber of Industry. The program was designed to register participants at the vocational training center and track all processes throughout their training as part of the initiative to integrate refugees into employment. Users were trained on how to use the application, and any issues encountered during use were fixed while new features were added based on requests.</li>
+            <li><strong>Dashboard Application</strong>: I developed a dashboard application using ASP .NET, Razor Pages, and MSSQL to help company managers monitor the routine activities of subcontractors.</li>
+          </ul>
+          <p><strong>Xloop Interactive (Metropolis presentation tool with map)</strong> - Gaziantep, Türkiye</p>
+          <p>Backend Developer-Remotely (ASP.Net C#, MSSQL) (Sep. 2019 - still)</p>
+          <ul>
+            <li><strong>Back-end</strong>: Metropolis is a great presentation tool that uses Google Maps to help public service institutions showcase their projects based on location. I made significant contributions to developing the REST API using the .NET framework for the project, which features a fast and dynamic backend. I continue to provide remote support to the company.</li>
+          </ul>
+          <p><strong>Erpen PVC (Operating in the polymer door and window sector)</strong> - Gaziantep, Türkiye</p>
+          <p>Software engineer (.Net C#, MSSQL) (November 2018 - June 2019)</p>
+          <ul>
+            <li><strong>ERP development</strong>: I worked with a software team to develop an ERP system for tracking business processes in the factory’s procurement, production, warehouse, and shipment departments. During this process, I was responsible for fixing user-reported issues, developing new business models, and building and managing the ERP system using C# .NET, MSSQL, and stored procedures.</li>
+          </ul>
+          <p><strong>Barfas AutoID (RFID)</strong> - Istanbul, Türkiye</p>
+          <p>Software engineer (.Net C#, MSSQL) (March 2018 - October 2018)</p>
+          <ul>
+            <li><strong>RFID tagId reading project</strong>: A Java-based stream project was developed to read RFID tags on products collectively during shipment in the manufacturing sector using the TCP/IP protocol and store the data in a database.</li>
+            <li><strong>Forecast website</strong>: A dynamic website was developed using PHP, HTML, CSS, JavaScript, jQuery, and MySQL, where visitors could make predictions about the future value of foreign currencies against the Turkish Lira. The website featured various graphs to assist with these predictions.</li>
+          </ul>
+          <p><strong>Ministry of Justice (UYAP, National Judiciary Informatics System)</strong> - Ankara, Türkiye</p>
+          <p>Software Developing Specialist (Java EE, JPA, Oracle SQL, PL/SQL) (Nov. 2010 - Feb 2018)</p>
+          <ul>
+            <li><strong>UYAP</strong>: I worked as a Java Developer in a large software team on Turkey's National Judiciary Network Project, a massive multi-user project where data from various units of the Ministry of Justice, such as courts and prosecutors' offices, was entered. The project involved generating statistical reports and contributed to speeding up the judicial process.</li>
+          </ul>
+          <h2>Major professional projects</h2>
+          <p><strong>Metropolis Presentation tool</strong> - Xloop</p>
+          <p>Map based presentation tool (.Net C# REST API, MSSQL) (Sep. 2019 - still)</p>
+          <ul>
+            <li><strong>Back-end</strong>: Each slide was linked to a selected location on the map, and this information was stored in the database. Additionally, it was ensured that the required data could be sent interactively to the frontend in JSON format for dynamic retrieval.</li>
+          </ul>
+          <p><strong>Trainee Tracking Program</strong> - GSO</p>
+          <p>WinForm project (.NET C#, Devexpress, MSSQL) (July. 2019 - Jan. 2022)</p>
+          <ul>
+            <li><strong>Training process</strong>: The system handled user registrations, assignment to training sessions, payment processing, and the facilitation of employment opportunities within the industry.</li>
+          </ul>
+          <p><strong>UYAP</strong> - Ministry of Justice</p>
+          <p>National Judiciary Informatics System (Java Enterprise Edition) (Nov. 2010 - Feb. 2018)</p>
+          <ul>
+            <li><strong>Back-end</strong>: In the backend of the project, Java technologies such as JSEE, EJBs, and JPA were used, along with Oracle database and PL/SQL. Additionally, data sharing between the project and other government projects was facilitated through SOA web services. During the deployment phase, Jenkins tool was used for continuous integration and deployment.</li>
+            <li><strong>Graphic User Interface (GUI)</strong>: The user interfaces were developed using Swing components. In the system, which had multiple modules, I worked as a module developer, designing user screens with Java Swing.</li>
+          </ul>
+          <h2>Spoken languages</h2>
+          <ul>
+            <li><strong>English</strong>: Upper Intermediate</li>
+            <li><strong>Dutch</strong>: Intermediate</li>
+            <li><strong>Turkish</strong>: Native</li>
+          </ul>
+          <h2>Programming languages (used professionally)</h2>
+          <ul>
+            <li><strong>.NET C#</strong>: Advanced (4 years). Specialized in trait bounds and life-times. ASP .NET Frameworks used: IIS (web server), REST API, GRAPHQL API (.NET Core, Entity Framework), Blazor (MAUI), Devexpress, Docker.</li>
+            <li><strong>Java Technologies</strong>: Advanced (6 years). UYAP (Ministry of Justice in Turkey). Frameworks used: Spring Boot, Spring Web, Spring Data, Spring Security, J2EE, JSE, EJB, OpenJPA, Hibernate (Backend side), Swing (GUI), JSP (Portal), SOA (Web servers), specialized word processor (Digital signature on documentations), Jenkins (Deploying).</li>
+            <li><strong>Databases</strong>: Advanced (10 years) Oracle SQL and Oracle BI (Database for UYAP), MSSQL (GSO projects), MySQL, PostgreSQL (Website for Website projects).</li>
+            <li><strong>Web Technologies</strong>: Advanced (2 years) HTML, CSS, JavaScript, PHP, WordPress.</li>
+          </ul>
+          <h2>Education</h2>
+          <p><strong>MU Mersin</strong> - Mersin, Türkiye</p>
+          <p>Bachelor of Computer Engineering (Sept. 2006 - August 2010)</p>
+          <ul>
+            <li><strong>Completed courses</strong>: Data Structures and Algorithms, OOP with Java, Parallel programming, Databases, Network, Web Programming, Electronic, Processors.</li>
+            <li><strong>Professional job</strong>: IT support for courts of the city.</li>
+          </ul>
+          <p><strong>GAUN Gaziantep</strong> - Gaziantep, Türkiye</p>
+          <p>Vocational High School - Computer programming (Sep. 2001 - June 2005)</p>
+          <ul>
+            <li><strong>Completed courses</strong>: Pascal, OOP with Delphi, Processors, Industrial Electronic, Web Programming with PHP, Databases, Network systems.</li>
+            <li><strong>Professional job</strong>: Management of Hospital automation.</li>
+          </ul>
+          <h2>Hobbies</h2>
+          <ul>
+            <li><strong>Community Deinze</strong>: Join the community 'Deinze gemeente samengesprek', a community for new comers in Deinz. Goal is to practice in Dutch and to be social with organized activations.</li>
+            <li><strong>Individual hobbies</strong>: Biking, fitness, football, reading book, traveling.</li>
+          </ul>
+          <h2>Extra Information</h2>
+          <ul>
+            <li><strong>Internship and inducements</strong>: I am eligible for IBO, BIS, and other forms of workplace learning.</li>
+          </ul>
+        `;
+      });
+  </script>
 </body>
 </html>
